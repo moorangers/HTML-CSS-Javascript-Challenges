@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+img {
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel {
+  width: 500px;
+  overflow: hidden;
+  height: 530px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s linear;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background: gray;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  width: 50%;
+  cursor: pointer;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
